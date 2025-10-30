@@ -1,3 +1,10 @@
+# Ignore eberything (to pick executables with no extension)
+*
+# After that track again all directories and files with extensions
+!*/
+!*.*
+
+# Ignore (again, order matters in .gitignore)
 dist
 dist-*
 cabal-dev
@@ -21,6 +28,8 @@ cabal.project.local
 cabal.project.local~
 .HTF/
 .ghc.environment.*
+
+*.hs.out
 
 # Testing
 test.hs
