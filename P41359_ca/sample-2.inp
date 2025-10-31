@@ -1,0 +1,7 @@
+pushNegations $ Val True
+pushNegations $ Var "x"
+pushNegations $ Not (Val True)
+pushNegations $ And (Val True) (Var "x")
+pushNegations $ Or (And (Val True) (Var "x")) (Not (Or (Var "y") (Var "x")))
+pushNegations $ Not (Or (And (Val True) (Var "x")) (Not (Or (Var "y") (Var "x"))))
+pushNegations $ Not $ Not $ Not $ Var "a"

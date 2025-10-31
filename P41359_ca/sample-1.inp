@@ -1,0 +1,7 @@
+Val False
+Val True
+Var "a"
+And (Val True) (Var "b")
+And (Val False) (Val False)
+Or (And (Val True) (Var "x")) (Not (Or (Var "y") (Var "x")))
+Not (Or (And (Val True) (Var "x")) (Not (Or (Var "y") (Var "x"))))

@@ -1,10 +1,14 @@
 {
   "name": "LP Haskell",
   "image": "mcr.microsoft.com/devcontainers/base:noble",
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install --yes build-essential curl libffi-dev libffi8 libgmp-dev libgmp10 libncurses-dev libncurses6 libtinfo6 pkg-config && curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | BOOTSTRAP_HASKELL_NONINTERACTIVE=1 sh && echo 'source /home/vscode/.ghcup/env' >> $HOME/.bashrc",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install --yes build-essential curl libffi-dev libffi8 libgmp-dev libgmp10 libncurses-dev libncurses6 libtinfo6 pkg-config && curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | BOOTSTRAP_HASKELL_NONINTERACTIVE=1 sh && echo 'source /home/vscode/.ghcup/env' >> $HOME/.bashrc && curl -fsSL https://claude.ai/install.sh | bash",
   "customizations": {
     "vscode": {
-      "extensions": ["jutge-org.jutge-vscode", "GitHub.copilot-chat"]
+      "extensions": [
+        "jutge-org.jutge-vscode",
+        "GitHub.copilot-chat",
+        "Anthropic.claude-code"
+      ]
     }
   }
 }

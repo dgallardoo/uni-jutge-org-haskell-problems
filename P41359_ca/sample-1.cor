@@ -1,0 +1,7 @@
+0
+1
+a
+(1 and b)
+(0 and 0)
+((1 and x) or (not (y or x)))
+(not ((1 and x) or (not (y or x))))
